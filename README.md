@@ -1,5 +1,3 @@
-don't read this
+Made mostly with LemLib and PROS. LVGL is also here, but I hate LVGL so we can ignore that.
 
-why
-
-78780S Selene or smth
+78780S Selene
