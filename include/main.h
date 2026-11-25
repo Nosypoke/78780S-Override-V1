@@ -44,6 +44,8 @@
 #include "controller.hpp" // IWYU pragma: keep
 #include "drive.hpp" // IWYU pragma: keep
 #include "subsystems.hpp" // IWYU pragma: keep
+#include "autons.hpp" // IWYU pragma: keep
+#include "ui.hpp" // IWYU pragma: keep
 
 //#include "okapi/api.hpp"
 

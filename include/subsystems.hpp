@@ -5,10 +5,11 @@
 #include "pros/motor_group.hpp"
 
 //claw items
-inline pros::Motor Claw5(5, pros::MotorGearset::green);
+inline pros::Motor Claw5(5, pros::MotorGearset::green, pros::MotorUnits::deg);
 
 void set_claw(int input);
 void claw_opcontrol();
+void open_claw();
 
 //lift items
 inline pros::MotorGroup LiftMotors({20, -10}, pros::MotorGearset::green, pros::MotorUnits::deg);
@@ -19,7 +20,7 @@ void lift_opcontrol();
 
 //toggle items 
 
-inline pros::MotorGroup ToggleMotors({3, 13}, pros::MotorGearset::green, pros::MotorUnits::rotations);
+inline pros::MotorGroup ToggleMotors({3, -13}, pros::MotorGearset::green, pros::MotorUnits::rotations);
 
 void rotate_toggle(int input);
 void toggle_opcontrol();

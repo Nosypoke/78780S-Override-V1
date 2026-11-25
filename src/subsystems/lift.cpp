@@ -1,7 +1,7 @@
 #include "main.h" // IWYU pragma: keep
 
 void set_lift(int input){ //degrees
-    LiftMotors.move_absolute(input, 127);
+    LiftMotors.move_relative((input * 3), 127);
 }
 
 void lift_opcontrol(){

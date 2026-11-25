@@ -7,11 +7,9 @@ void rotate_toggle(int input){
 void toggle_opcontrol(){
     if (master.get_digital(pros::E_CONTROLLER_DIGITAL_A)){
         ToggleMotors.move(127);
-    }
-    if (master.get_digital(pros::E_CONTROLLER_DIGITAL_X)){
+    }else if (master.get_digital(pros::E_CONTROLLER_DIGITAL_X)){
         ToggleMotors.move(-127);
-    }
-    if (!master.get_digital(pros::E_CONTROLLER_DIGITAL_X) and !master.get_digital_new_press(pros::E_CONTROLLER_DIGITAL_A)){
+    }else if (!master.get_digital(pros::E_CONTROLLER_DIGITAL_X) and !master.get_digital_new_press(pros::E_CONTROLLER_DIGITAL_A)){
         ToggleMotors.move_velocity(0);
     }
 }

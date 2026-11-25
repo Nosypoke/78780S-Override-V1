@@ -8,7 +8,22 @@
  */
 void initialize() {
 	chassis.calibrate();
-    pros::delay(3000);
+    //display_initialize();
+    //lv_timer_handler();
+    /*while (true){
+        static lv_style_t style1;
+        lvgl_init();
+        lv_style_init(&style1);
+        lv_tick_inc(50);
+        lv_timer_handler();
+        lv_screen_active();
+        lv_obj_t * obj1;
+        lv_obj_t* main_tv = lv_tileview_create(NULL);
+        obj1 = lv_obj_create(main_tv);
+        lv_obj_set_size(obj1, 100, 50);
+        lv_style_set_bg_color(&style1, pink);
+        lv_obj_align(obj1, LV_ALIGN_CENTER, -60, -30);*/
+    //}
 }
 
 /**
@@ -40,7 +55,9 @@ void competition_initialize() {}
  * will be stopped. Re-enabling the robot will restart the task, not re-start it
  * from where it left off.
  */
-void autonomous() {}
+void autonomous() {
+    SkillsAuto();
+}
 
 /**
  * Runs the operator control code. This function will be started in its own task
